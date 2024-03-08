@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Open Cart Test Regression Suite" thread-count="3" parallel="tests" verbose="4">
+
+	 <listeners>
+		<listener class-name="j4.qa.opencart.Listners.ExtentReportListener" />
+
+	</listeners>
+
+	<test name="Open Cart HomePage Test">
+		<classes>
+			<class name="j4.qa.opencart.Test.HomePageTest" />
+		</classes>
+	</test>
+
+	<test name="Open Cart RegisterPage Test">
+		<classes>
+			<class name="j4.qa.opencart.Test.RegisterPageTest"></class>
+		</classes>
+	</test>
+
+	<test name="Open Cart SuccessPage Test">
+		<classes>
+			<class name="j4.qa.opencart.Test.SuccessPageTest"></class>
+		</classes>
+	</test>
+
+
+	<!--<test name="Open Cart Login Page Test_safari">
+		<parameter name="browser" value="chromium" />
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test> -->
+
+
+	<!-- <test name="Open Cart Home Page Test_chromium">
+		<parameter name="browser" value="chromium" />
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test> -->
+
+	<!-- <test name="Open Cart Login Page Test_edge1">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test> -->
+
+
+</suite>
